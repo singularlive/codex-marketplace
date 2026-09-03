@@ -1,0 +1,18 @@
+{
+  "name": "singular-composer",
+  "version": "0.1.0",
+  "description": "Control Singular Composer with packaged CLI helpers and Playwright dependencies.",
+  "author": {
+    "name": "Singular"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Singular Composer",
+    "shortDescription": "Create and verify Composer graphics without npm setup.",
+    "longDescription": "Inspect and author graphics in an authorized Singular Composer editor, manage composition scripts, and verify output in the Player. Includes pinned JavaScript dependencies and Playwright Core. Requires Node.js 22+ and installed Google Chrome for standalone capture and Player verification.",
+    "developerName": "Singular",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": ["Connect to my open Singular Composer composition.", "Create a lower third in Singular Composer."]
+  }
+}

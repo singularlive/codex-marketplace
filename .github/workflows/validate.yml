@@ -1,0 +1,24 @@
+name: Validate marketplace
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate marketplace and vendored dependencies
+        run: python scripts/validate-marketplace.py
+      - name: Verify packaged runtime in isolation
+        run: node plugins/singular-composer/scripts/smoke-test.cjs

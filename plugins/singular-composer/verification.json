@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "platform": "win32",
+  "architecture": "x64",
+  "node": "v22.14.0",
+  "checks": [
+    "relocated-runtime-doctor",
+    "composer-cli-loads-without-ambient-packages",
+    "esm-verifier-loads-packaged-playwright",
+    "packaged-color-uuid-websocket-roundtrip"
+  ],
+  "browser": "ready",
+  "browserVersion": "152.0.7977.65",
+  "liveComposer": "not-tested",
+  "otherPlatforms": "not-tested",
+  "checkedAt": "2026-09-03T09:01:54.738Z"
+}

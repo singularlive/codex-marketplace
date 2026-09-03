@@ -1,0 +1,16 @@
+# Local credentials and generated output
+.env
+.env.*
+!.env.example
+credentials.json
+*-credentials.json
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+artifacts/
+test-results/
+
+# Runtime dependencies are intentionally vendored for npm-free installation.
+# Do not add a blanket node_modules ignore rule.

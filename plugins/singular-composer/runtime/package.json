@@ -1,0 +1,12 @@
+{
+  "name": "singular-composer-plugin-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "tinycolor2": "1.4.1",
+    "uuid": "8.3.2",
+    "ws": "8.21.3",
+    "playwright-core": "1.62.1"
+  }
+}
